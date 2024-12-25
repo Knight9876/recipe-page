@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Frontend Mentor | Recipe Page</title>
+
+    <style>
+      @font-face {
+        font-family: "Young Serif";
+        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf")
+      }
+
+      @font-face {
+        font-family: "Outfit";
+        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+      }
+      body {
+        background-color: hsl(30, 54%, 90%);
+        font-family: "Outfit", sans-serif;
+      }
+      h1,
+      h1 {
+        font-family: "Young Serif", serif;
+      }
+      p,
+      ul,
+      ol {
+        color: hsl(30, 10%, 34%);
+      }
+      .main {
+        border-radius: 2rem;
+      }
+      .square {
+        list-style: square;
+      }
+    </style>
+  </head>
+  <body class="flex justify-center items-center min-h-screen">
+    <div class="main bg-white max-w-4xl mx-auto sm:my-40 shadow-md">
+      <div class="sm:mx-14 sm:mt-14">
+        <img
+          class="mb-12 sm:rounded-2xl"
+          src="assets/images/image-omelette.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="px-10 sm:px-14">
+        <!-- Recipe Title -->
+        <h1 class="text-5xl font-normal my-8 text-[hsl(24, 5%, 18%)]">
+          Simple Omelette Recipe
+        </h1>
+
+        <!-- Description -->
+        <p class="">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+
+        <!-- Preparation Time -->
+        <section class="rounded-2xl my-10 p-5 bg-[hsl(330,100%,98%)]">
+          <p class="text-xl font-semibold text-[hsl(332,51%,32%)] p-1">
+            Preparation Time
+          </p>
+          <ul
+            class="list-disc pl-5 list-outside marker:[color:hsl(332,51%,32%)]"
+          >
+            <li class="px-3 m-2">
+              <span class="font-bold">Total</span>: Approximately 10 minutes
+            </li>
+            <li class="px-3 m-2">
+              <span class="font-bold">Preparation</span>: 5 minutes
+            </li>
+            <li class="px-3 m-2">
+              <span class="font-bold">Cooking</span>: 5 minutes
+            </li>
+          </ul>
+        </section>
+
+        <!-- Ingredients -->
+        <section class="my-10">
+          <h1 class="text-4xl mb-6 text-[hsl(14,45%,36%)]">Ingredients</h1>
+          <ul
+            class="square list-square list-outside marker:[color:hsl(14,45%,36%)] pl-5"
+          >
+            <li class="m-2 pl-3">2-3 large eggs</li>
+            <li class="m-2 pl-3">Salt, to taste</li>
+            <li class="m-2 pl-3">Pepper, to taste</li>
+            <li class="m-2 pl-3">1 tablespoon of butter or oil</li>
+            <li class="m-2 pl-3">
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </section>
+        <hr class="mb-4" />
+
+        <!-- Instructions -->
+        <section class="my-10">
+          <h1 class="text-4xl mb-6 text-[hsl(14,45%,36%)]">Instructions</h1>
+          <ol
+            class="list-decimal list-outside marker:[color:hsl(14,45%,36%)] marker:font-bold pl-5"
+          >
+            <li class="m-2 pl-3">
+              <span class="font-bold">Beat the eggs: </span>
+              In a bowl, beat the eggs with a pinch of salt and pepper until
+              they are well mixed. You can add a tablespoon of water or milk for
+              a fluffier texture.
+            </li>
+            <li class="m-2 pl-3">
+              <span class="font-bold">Heat the pan: </span>
+              Place a non-stick frying pan over medium heat and add butter or
+              oil.
+            </li>
+            <li class="m-2 pl-3">
+              <span class="font-bold">Cook the omelette: </span>
+              Once the butter is melted and bubbling, pour in the eggs. Tilt the
+              pan to ensure the eggs evenly coat the surface.
+            </li>
+            <li class="m-2 pl-3">
+              <span class="font-bold">Add fillings (optional): </span>
+              When the eggs begin to set at the edges but are still slightly
+              runny in the middle, sprinkle your chosen fillings over one half
+              of the omelette.
+            </li>
+            <li class="m-2 pl-3">
+              <span class="font-bold">Fold and serve: </span>
+              As the omelette continues to cook, carefully lift one edge and
+              fold it over the fillings. Let it cook for another minute, then
+              slide it onto a plate.
+            </li>
+            <li class="m-2 pl-3">
+              <span class="font-bold">Enjoy: </span>Serve hot, with additional
+              salt and pepper if needed.
+            </li>
+          </ol>
+        </section>
+        <hr class="mb-4" />
+
+        <!-- Nutrition -->
+        <section class="my-10">
+          <h1 class="text-4xl mb-6 text-[hsl(14,45%,36%)]">Nutrition</h1>
+          <p class="mb-6">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+          <div class="grid grid-cols-2">
+            <div class="left text-[hsl(30,10%,34%)] my-2 pl-10">Calories</div>
+            <div class="right text-[hsl(14,45%,36%)] my-2 pl-10 font-bold">
+              277kcal
+            </div>
+            <hr class="col-span-2 my-2" />
+            <div class="left text-[hsl(30,10%,34%)] my-2 pl-10">Carbs</div>
+            <div class="right text-[hsl(14,45%,36%)] my-2 pl-10 font-bold">
+              0g
+            </div>
+            <hr class="col-span-2 my-2" />
+            <div class="left text-[hsl(30,10%,34%)] my-2 pl-10">Protein</div>
+            <div class="right text-[hsl(14,45%,36%)] my-2 pl-10 font-bold">
+              20g
+            </div>
+            <hr class="col-span-2 my-2" />
+            <div class="left text-[hsl(30,10%,34%)] my-2 pl-10">Fat</div>
+            <div class="right text-[hsl(14,45%,36%)] my-2 pl-10 font-bold">
+              22g
+            </div>
+          </div>
+        </section>
+
+        <!-- Attribution -->
+        <div class="attribution my-4 text-sm text-center">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="text-blue-500"
+            >Frontend Mentor</a
+          >. Coded by <a href="#" class="text-blue-500">Yash Kamble</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
