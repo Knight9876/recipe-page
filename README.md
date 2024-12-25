@@ -22,8 +22,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Knight9876/recipe-page)
-- Live Site URL: [Add live site URL here](https://recipe-page-using-tailwind.netlify.app)
+- Solution URL: [Solution](https://github.com/Knight9876/recipe-page)
+- Live Site URL: [Live URL](https://recipe-page-using-tailwind.netlify.app)
 
 ## My process
 
